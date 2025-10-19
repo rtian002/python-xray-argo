@@ -32,7 +32,6 @@ PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 3000) # шо
 
 # Create running folder
 def create_directory():
-    print('\033c', end='')
     if not os.path.exists(FILE_PATH):
         os.makedirs(FILE_PATH)
         print(f"{FILE_PATH} is created")
